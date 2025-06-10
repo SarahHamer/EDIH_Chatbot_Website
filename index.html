@@ -4,13 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EDIH Chatbot Usability Test</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9fb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #004c99;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to the EDIH Chatbot Usability Test!</h1>
 
-  <!-- Load the chatbot -->
-  <script id="initLoader" src='https://cpstech.de/what2StudyLoader/?bot_id=KDM78sMl86&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGF0Ym90SWQiOiJLRE03OHNNbDg2IiwicHVycG9zZSI6ImNoYXRib3RJbnRlZ3JhdGlvbiIsImlhdCI6MTc0OTQ3NTUyNn0.cZeC2Y9dSFv31mL1LaBiETTXgnc3mwwgR-GbeJBL5N4&windowtype=min'></script>
+  <header>
+    <h1>Welcome to the EDIH Chatbot Usability Test!</h1>
+  </header>
 
-  <p>Please interact with the chatbot above and share your feedback!</p>
+  <main>
+    <!-- Embedded chatbot directly via iframe instead of minimized icon -->
+    <iframe 
+      src="https://cpstech.de/what2StudyEmbed/?bot_id=KDM78sMl86&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGF0Ym90SWQiOiJLRE03OHNNbDg2IiwicHVycG9zZSI6ImNoYXRib3RJbnRlZ3JhdGlvbiIsImlhdCI6MTc0OTQ3NTUyNn0.cZeC2Y9dSFv31mL1LaBiETTXgnc3mwwgR-GbeJBL5N4" 
+      allow="microphone; camera">
+    </iframe>
+
+    <p>Please interact with the chatbot above thinking aloud. After you feel like you have explored enough, please answer a few questions and share your feedback!</p>
+  </main>
+
+  <footer>
+    &copy; 2025 Sarah Hamer Master Thesis EDIH Usability Study
+  </footer>
+
 </body>
 </html>
