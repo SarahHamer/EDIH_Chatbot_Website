@@ -30,12 +30,13 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     }
 
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
+    .chatbot-instruction {
+      background-color: #e6f2ff;
+      border-left: 6px solid #004c99;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      font-size: 1.1rem;
       border-radius: 8px;
-      margin-top: 1rem;
     }
 
     p {
@@ -58,18 +59,19 @@
   </header>
 
   <main>
-    <!-- Embedded chatbot directly via iframe instead of minimized icon -->
-    <iframe 
-      src="https://cpstech.de/what2StudyEmbed/?bot_id=KDM78sMl86&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGF0Ym90SWQiOiJLRE03OHNNbDg2IiwicHVycG9zZSI6ImNoYXRib3RJbnRlZ3JhdGlvbiIsImlhdCI6MTc0OTQ3NTUyNn0.cZeC2Y9dSFv31mL1LaBiETTXgnc3mwwgR-GbeJBL5N4" 
-      allow="microphone; camera">
-    </iframe>
+    <div class="chatbot-instruction">
+      Click the blue chatbot icon in the bottom-right corner to begin the test. The chatbot will open in a window.
+    </div>
 
-    <p>Please interact with the chatbot above thinking aloud. After you feel like you have explored enough, please answer a few questions and share your feedback!</p>
+    <p>Please interact with the chatbot above and think aloud. After you feel like you have explored enough, please stay around to answer a few follow-up questions and share your feedback!</p>
   </main>
 
   <footer>
     &copy; 2025 Sarah Hamer Master Thesis EDIH Usability Study
   </footer>
+
+  <!-- Chatbot script with floating button -->
+  <script id="initLoader" src="https://cpstech.de/what2StudyLoader/?bot_id=KDM78sMl86&token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGF0Ym90SWQiOiJLRE03OHNNbDg2IiwicHVycG9zZSI6ImNoYXRib3RJbnRlZ3JhdGlvbiIsImlhdCI6MTc0OTQ3NTUyNn0.cZeC2Y9dSFv31mL1LaBiETTXgnc3mwwgR-GbeJBL5N4&windowtype=min"></script>
 
 </body>
 </html>
